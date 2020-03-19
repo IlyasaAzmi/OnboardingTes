@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OnboardingTes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6l-NW-XVD">
+                                <rect key="frame" x="20" y="772" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vbM-AD-hZh"/>
+                                </constraints>
+                                <state key="normal" title="Sign In"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-1R-fuY">
+                                <rect key="frame" x="20" y="702" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ICB-EK-Wmj"/>
+                                </constraints>
+                                <state key="normal" title="Get Started"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-Fz-an4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="540"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hSz-xR-Lnh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="7Eg-eB-lyF"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zKC-Qh-IJF">
+                                <rect key="frame" x="0.0" y="645" width="414" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6l-NW-XVD" secondAttribute="trailing" constant="20" id="4Ix-3q-APA"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5YU-Fb-v69"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zKC-Qh-IJF" secondAttribute="trailing" id="IHY-CS-zfM"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="MCB-Sm-HJZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPz-1R-fuY" secondAttribute="trailing" constant="20" id="Nh0-Ct-EPD"/>
+                            <constraint firstItem="zKC-Qh-IJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SYf-Ko-PQq"/>
+                            <constraint firstItem="lPz-1R-fuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Sem-F5-xhj"/>
+                            <constraint firstItem="f6l-NW-XVD" firstAttribute="top" secondItem="lPz-1R-fuY" secondAttribute="bottom" constant="20" id="h26-je-a8G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f6l-NW-XVD" secondAttribute="bottom" constant="40" id="hEd-T9-Zqh"/>
+                            <constraint firstItem="f6l-NW-XVD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lvY-dB-ipT"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qTa-kW-3TK"/>
+                            <constraint firstItem="lPz-1R-fuY" firstAttribute="top" secondItem="zKC-Qh-IJF" secondAttribute="bottom" constant="20" id="sC9-hT-KAP"/>
+                            <constraint firstItem="zKC-Qh-IJF" firstAttribute="top" secondItem="KfQ-Fz-an4" secondAttribute="bottom" constant="20" id="x2G-Pj-r7H"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="lPz-1R-fuY" id="JeA-ng-HER"/>
+                        <outlet property="pageControl" destination="zKC-Qh-IJF" id="wyT-yI-rsO"/>
+                        <outlet property="scrollView" destination="KfQ-Fz-an4" id="znu-sm-pQW"/>
+                        <outlet property="signInButton" destination="f6l-NW-XVD" id="xb1-4u-HDT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
 </document>
