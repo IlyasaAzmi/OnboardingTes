@@ -13,7 +13,6 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var getStartedButton: UIButton!
-    @IBOutlet weak var signInButton: UIButton!
     
     var scrollWidth: CGFloat! = 0.0
     var scrollHeight: CGFloat! = 0.0
@@ -55,7 +54,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
             let imageView = UIImageView.init(image: UIImage.init(systemName: "qrcode.viewfinder"))
             imageView.frame = CGRect(x:0,y:0,width:200,height:200)
             imageView.contentMode = .scaleAspectFit
-            imageView.center = CGPoint(x:scrollWidth/2,y: scrollHeight/2 - 50)
+            imageView.center = CGPoint(x:scrollWidth/2,y: scrollHeight/2 - 70)
           
             let txt1 = UILabel.init(frame: CGRect(x:32,y:imageView.frame.maxY+30,width:scrollWidth-64,height:30))
             txt1.textAlignment = .center

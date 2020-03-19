@@ -15,20 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-1R-fuY">
-                                <rect key="frame" x="20" y="792" width="374" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="jp2-b9-hVD"/>
-                                </constraints>
-                                <state key="normal" title="Get Started"/>
-                            </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfQ-Fz-an4">
-                                <rect key="frame" x="0.0" y="191" width="414" height="527"/>
+                                <rect key="frame" x="0.0" y="153" width="414" height="534"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="hSz-xR-Lnh"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="7Eg-eB-lyF"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zKC-Qh-IJF">
-                                <rect key="frame" x="0.0" y="735" width="414" height="37"/>
+                                <rect key="frame" x="0.0" y="675" width="414" height="37"/>
                             </pageControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Onboarding" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3E-ib-ong">
                                 <rect key="frame" x="20" y="124" width="374" height="21"/>
@@ -36,22 +29,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPz-1R-fuY">
+                                <rect key="frame" x="20" y="732" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="jp2-b9-hVD"/>
+                                </constraints>
+                                <state key="normal" title="Get Started"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zKC-Qh-IJF" firstAttribute="top" secondItem="KfQ-Fz-an4" secondAttribute="bottom" constant="80" id="1zh-al-wAP"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1nA-ht-cOa"/>
                             <constraint firstItem="lPz-1R-fuY" firstAttribute="top" secondItem="zKC-Qh-IJF" secondAttribute="bottom" constant="20" id="Ab1-Wj-slQ"/>
                             <constraint firstItem="lPz-1R-fuY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AkG-mx-CQF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M3E-ib-ong" secondAttribute="trailing" constant="20" id="CED-Rz-0hA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zKC-Qh-IJF" secondAttribute="trailing" id="IHY-CS-zfM"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="top" secondItem="M3E-ib-ong" secondAttribute="bottom" id="J8B-Cm-sUl"/>
                             <constraint firstItem="zKC-Qh-IJF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SYf-Ko-PQq"/>
                             <constraint firstItem="M3E-ib-ong" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Y0J-vP-xby"/>
-                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aY4-kT-gbW"/>
-                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="top" secondItem="M3E-ib-ong" secondAttribute="bottom" constant="50" id="hCB-X8-NX1"/>
-                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hYi-a5-ikT"/>
+                            <constraint firstItem="KfQ-Fz-an4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aSB-d6-KCM"/>
+                            <constraint firstItem="zKC-Qh-IJF" firstAttribute="top" secondItem="KfQ-Fz-an4" secondAttribute="bottom" id="gFi-8Y-SZD"/>
                             <constraint firstItem="M3E-ib-ong" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lOm-GH-TbT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPz-1R-fuY" secondAttribute="trailing" constant="20" id="sOj-Ke-7xr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPz-1R-fuY" secondAttribute="bottom" constant="20" id="y2x-RQ-deA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lPz-1R-fuY" secondAttribute="bottom" constant="80" id="y2x-RQ-deA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
